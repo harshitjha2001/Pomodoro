@@ -4,12 +4,26 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    background: linear-gradient(63deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(243deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(63deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(243deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(0deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-size: 20px 20px;
+    background-color: #131313;
+}
+h1{
+    margin: 0;
+    height:50px;
+    line-height: 3rem;
+    color: #e3f6f5;
+    text-align: center;
+    background: linear-gradient(-90deg, #163e96, #2c2f473d);
+}
+
 #container
 {
-    height: 500px;
+    height: 450px;
     width: 800px;
-    background-color: #70c6f8;
-    margin: 50px auto;
+    background-color: #6389cee3;
+    margin: 50px auto  80px auto;
     border: 5px solid #034357;
 
     display: grid;
@@ -48,7 +62,7 @@ html {
 
 #counter {
     grid-area: 2 / 2 / 3 / 3;
-    color: red;
+    color:#be4e4e;
 }
 
 #work-timer {
@@ -67,6 +81,7 @@ html {
     height: 30px;
 
     font-size: 20px;
+    box-shadow: 2.5px 2.5px;
 }
 
 #start {
@@ -88,4 +103,76 @@ html {
     transition:0.5s ease;
 
 
+}
+
+
+footer{
+   display:flex;
+  padding: 0rem 0;
+  width: 100%;
+  background: linear-gradient(90deg, #163e96, #2c2f473d);
+  justify-content: space-between;
+  color: #fff;
+}
+
+.footer-container{
+  margin: 0 auto;
+  max-width: 100rem;
+  width: 80%;
+  display: flex;
+ 
+  justify-content: space-between;
+}
+
+
+
+
+
+.footer-links{
+  margin: 1rem 0;
+  width: 30%;
+}
+
+.footer-links-ul{
+ 
+  list-style: none;
+}
+
+.footer-links-li{
+  margin: 0.5rem;
+}
+
+.footer-links-a{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+.footer-copyrights{
+  margin: 0rem 0;
+  width: 30%;
+}
+
+.footer-social-links{
+  margin: 1rem 0;
+  width: 15%;
+  display: flex;
+}
+
+.footer-social-links .social-a{
+  margin-right: 1rem; 
+  color: #fff;
+}
+
+.footer-btn{
+    height:2rem;
+    width:8rem;
+  padding: .25rem .5rem;
+  border: 0;
+  outline: 0;
+  background: #fff;
+  border-radius: 1rem;
+  color: #002240;
+  text-decoration: none; 
 }
