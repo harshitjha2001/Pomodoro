@@ -80,3 +80,12 @@ html {
 #stop {
     grid-area: 3 / 3 / 4 / 4;
 }
+
+.show_message{
+    display: block;
+    color:#272343;
+    background: #e3f6f5;
+    transition:0.5s ease;
+
+
+}
