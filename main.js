@@ -1,3 +1,5 @@
+var input=prompt("Enter your work cycle time",25);
+document.getElementById('w_minutes').innerHTML=input;
 var start = document.getElementById('start');
 var reset = document.getElementById('reset');
 var stop = document.getElementById('pause');
@@ -19,7 +21,7 @@ start.addEventListener('click', function () {
 })
 
 reset.addEventListener('click', function () {
-    wm.innerText = 25;
+    wm.innerText = input;
     ws.innerText = "00";
 
     bm.innerText = 5;
@@ -63,7 +65,7 @@ function timer() {
 
     if (wm.innerText == 0 && ws.innerText == 0 && bm.innerText == 0 && bs.innerText == 0) {
         alert('break over! start working again');
-        wm.innerText = 25;
+        wm.innerText = input;
         ws.innerText = "00";
 
         bm.innerText = 5;
